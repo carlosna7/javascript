@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CASSETADA</title>
+    <style>
+        body {
+
+            font: normal 14pt Arial;
+
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Tu é gringo ou não meu Chapa?</h1>
+    De que pais você é? <input type="text" name="txtpais" id="txtpais">
+    <input type="button" value="Verificar" onclick="nomear()">
+    <div id="res">
+    </div>
+    <script>
+ 
+        function nomear() {
+            var txtpais = window.document.getElementById('txtpais')
+            var pais = (txtpais.value)
+            var res = window.document.querySelector('div#res')
+            // res.innerHTML
+            if (pais == 'Brasil') {
+                res.innerHTML += `<p> Para Bens, você entendeu este meme! </p>`
+
+            } else {
+                res.innerHTML += `<p> Desculpa você é Gringou! </p>`
+
+            }
+
+        }
+
+    </script>
+</body>
+</html>
