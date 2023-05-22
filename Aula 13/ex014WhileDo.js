@@ -9,7 +9,7 @@ do {
 var c = 1
 
 while (c <= 5) {
-    console.log(`Passa $c}`)
+    console.log(`Passa ${c}`)
     c += 1
 }
 */
